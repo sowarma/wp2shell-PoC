@@ -5,7 +5,7 @@
 
 ## Overview
 
-Proof-of-concept for the wp2shell vulnerability chain affecting WordPress Core, combining CVE-2026-63030 and CVE-2026-60137. The project demonstrates the interaction between the REST API Batch route confusion vulnerability and a WP_Query SQL injection, resulting in an unauthenticated path to full WordPress compromise and remote code execution (RCE).
+A proof-of-concept for the wp2shell vulnerability chain affecting WordPress Core, combining CVE-2026-63030 and CVE-2026-60137. The project demonstrates the interaction between the REST API Batch route confusion vulnerability and a WP_Query SQL injection, resulting in an unauthenticated path to full WordPress compromise and remote code execution (RCE).
 
 **Read the full advisory [here](https://wp2shell.com/)**
 
