@@ -1,6 +1,6 @@
 # wp2shell-PoC
 
-> **⚠ This tool is created solely for educational or bug bounty purpose only. Unauthorized use outside of controlled environments is strictly prohibited.**
+> **⚠ This tool is created solely for educational or bug bounty purposes only. Unauthorized use outside of controlled environments is strictly prohibited.**
 
 
 ## Overview
@@ -173,7 +173,7 @@ The plugin webshell is uploaded with a random path and a per-run token. The uplo
 
 # Disclaimer
 
-This tool is created solely for educational or bug bounty purpose only. Unauthorized use outside of controlled environments is strictly prohibited.
+This tool is created solely for educational or bug bounty purposes only. Unauthorized use outside of controlled environments is strictly prohibited.
 
 
 
