@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 
-exp.run_sync(FORCE_SYNC=True)
+exp.run_sync()
 
 class WP2Shell:
     def __init__(self, target, **kwargs):
